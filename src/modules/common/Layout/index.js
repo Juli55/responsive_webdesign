@@ -1,11 +1,8 @@
 import React from 'react';
 
 import {
-  FooterContainer,
   GlobalStyle,
-  HeaderContainer,
-  MainContainer,
-  SiteContainer
+  Container
 } from './style';
 
 import Header from '../Header';
@@ -15,17 +12,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <SiteContainer>
-        <HeaderContainer>
-          <Header />
-        </HeaderContainer>
-        <MainContainer>
-          <main style={{ textAlign: 'center' }}>{children}</main>
-        </MainContainer>
-        <FooterContainer>
-          <Footer />
-        </FooterContainer>
-      </SiteContainer>
+      <Header />
+      <Container>{children}</Container>
+      <Footer />
     </>
   );
 };
