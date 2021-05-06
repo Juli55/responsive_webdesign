@@ -1,0 +1,46 @@
+{
+  "name": "gatsby-website-boilerplate",
+  "private": true,
+  "description": "A simple boilerplate for Gatsby",
+  "version": "0.1.0",
+  "author": "Aldin Hadzifejzovic (aldin.hadzifejzovic@prea.eu)",
+  "dependencies": {
+    "extract-react-intl-messages": "^4.1.1",
+    "gatsby": "^2.32.0",
+    "gatsby-image": "^2.5.0",
+    "gatsby-plugin-intl": "^0.3.3",
+    "gatsby-plugin-manifest": "^2.6.1",
+    "gatsby-plugin-offline": "^3.4.0",
+    "gatsby-plugin-react-helmet": "^3.4.0",
+    "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-styled-components": "^3.10.0",
+    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-transformer-sharp": "^2.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^5.12.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    " #### TOOLS #### ": "echo 1",
+    "prettier-fix-code": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "generate-intl-json": "extract-messages -l=en -o src/lang -d en --flat false './src/**/!(*.test).js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aldinko/gatsby-website-boilerplate"
+  }
+}

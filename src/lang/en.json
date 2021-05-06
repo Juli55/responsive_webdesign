@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "text": "All rights reserved."
+  },
+  "header": {
+    "imprint": "Imprint",
+    "landing": "Main page"
+  },
+  "imprint": {
+    "goBack": "Go back to the landing page",
+    "title": "An imprint is still missing..."
+  },
+  "landing": {
+    "goToImprint": "Go to the imprint page",
+    "welcome": "Welcome to Gatsby!"
+  },
+  "title": {
+    "imprint": "Imprint",
+    "landing": "Welcome to Gatsby",
+    "notFound": "Page not found"
+  }
+}
