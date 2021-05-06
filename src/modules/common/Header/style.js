@@ -8,3 +8,7 @@ export const MenuLink = styled(Link)`
   margin: 0 0.5rem;
   text-decoration: none;
 `;
+
+export const StyledHeader = styled.div`
+    background-color: red;
+`;
