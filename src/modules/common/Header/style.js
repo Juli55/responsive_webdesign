@@ -2,27 +2,32 @@ import styled from 'styled-components';
 
 // ATTENTION: Always import Link from 'gatsby-plugin-intl' NEVER from 'gatsby'
 import { Link } from 'gatsby-plugin-intl';
+import Container from '../../components/Container'
 
 export const MenuLink = styled(Link)`
   color: black;
   margin: 0 0.5rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 `;
 
 export const StyledHeader = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    background-color: rgba(179, 229, 252, .6);
-    height: 160px;
+    background-color: rgba(28, 255, 160, .6);
+    height: 86px;
     justify-content: center;
+    z-index: 1;
 `;
 
-export const FlexContainer = styled.div`
+export const FlexContainer = styled(Container)`
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1624px;
 `;
 
 export const FlexItem = styled.div`

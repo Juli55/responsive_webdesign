@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   GlobalStyle,
-  Container
+  ContentContainer
 } from './style';
 
 import Header from '../Header';
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <Header />
-      <Container>{children}</Container>
+      <ContentContainer>{children}</ContentContainer>
       <Footer />
     </>
   );

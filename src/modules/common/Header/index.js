@@ -14,7 +14,7 @@ const Header = () => {
     <StyledHeader>
       <FlexContainer>
         <FlexItem>
-          <MenuLink to="/"><img src={logo} width={264} alt=""/></MenuLink>
+          <MenuLink to="/"><img src={logo} width={182} alt=""/></MenuLink>
         </FlexItem>
         <FlexItem>
           <MenuLink to="/">{intl.formatMessage(i18n.landing)}</MenuLink>
