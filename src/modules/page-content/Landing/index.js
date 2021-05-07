@@ -13,11 +13,6 @@ const Landing = () => {
 
   return (
     <>
-      <Title type="italic">{intl.formatMessage(i18n.welcome)}</Title>
-      <Image />
-      <Button onClick={() => navigate('/imprint')}>
-        {intl.formatMessage(i18n.goToImprint)}
-      </Button>
     </>
   );
 };

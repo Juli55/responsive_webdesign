@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem 0;
+  max-width: 1024px;
 `;
