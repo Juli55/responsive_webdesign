@@ -1,6 +1,8 @@
 import React from 'react';
 import { useIntl, navigate } from 'gatsby-plugin-intl';
-import { SectionWrapper, ContentContainer, BackgroundContainer, FlexContainer, FlexItem } from './style'
+import { SectionWrapper, ContentContainer, BackgroundContainer, FlexContainer, FlexItem , DemonstrationCardFront, DemonstrationCardBack, ReadMoreButtonWrapper } from './style'
+import { Button } from '../../../../components/Button'
+
 const First = () => {
     const intl = useIntl();
 
@@ -9,14 +11,21 @@ const First = () => {
             <SectionWrapper>
                 <BackgroundContainer />
                 <ContentContainer>
+                    <DemonstrationCardFront>
+                        Demonstration of Comparing Affiliate Marketing Products
+                    </DemonstrationCardFront>
+                    <DemonstrationCardBack>
+                        Demonstration of Comparing Affiliate Marketing Products
+                    </DemonstrationCardBack>
                     <FlexContainer>
                         <FlexItem>
                             <h1>Welcome to Affililab</h1>
                             <h2>Find your best fitting Affiliate Marketing Product</h2>
                             <p>Compare the Products you selected to advertise to get the ones with the best conditions</p>
-                            <button>get to know how</button>
+                            <ReadMoreButtonWrapper>
+                                <Button>read more</Button>
+                            </ReadMoreButtonWrapper>
                         </FlexItem>
-                        <FlexItem></FlexItem>
                     </FlexContainer>
                     <div style={{height: '100vh'}}></div>
                 </ContentContainer>

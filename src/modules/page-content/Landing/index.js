@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from '../../common/Image';
 import { Title } from '../../components/Text';
-import { Button } from '../../components/Buttons';
+import { Button } from '../../components/Button';
 
 // ATTENTION: Always import navigate from 'gatsby-plugin-intl' NEVER from 'gatsby'
 import { useIntl, navigate } from 'gatsby-plugin-intl';

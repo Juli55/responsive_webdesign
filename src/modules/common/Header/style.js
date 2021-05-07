@@ -17,7 +17,8 @@ export const StyledHeader = styled.div`
     left: 0;
     right: 0;
     display: flex;
-    background-color: rgba(28, 255, 160, .6);
+    background-color: rgba(102, 252, 164, .5);
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.2);
     height: 86px;
     justify-content: center;
     z-index: 1;
