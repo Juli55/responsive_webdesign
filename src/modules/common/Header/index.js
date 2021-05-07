@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 import i18n from './i18n';
-import { MenuLink, StyledHeader, FlexContainer, FlexItem } from './style';
+import { MenuLink, StyledHeader, FlexContainer, FlexItem, RequestDemoButton } from './style';
 import { Container } from '../Layout/style';
 
 import logo from '../../../images/logo.svg'
@@ -22,7 +22,7 @@ const Header = () => {
           <MenuLink to="/third-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
           <MenuLink to="/fourth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
           <MenuLink to="/fifth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
-          <button style={{padding: '1rem'}}>request early access</button>
+          <RequestDemoButton>request early access</RequestDemoButton>
         </FlexItem>
       </FlexContainer>
     </StyledHeader>
