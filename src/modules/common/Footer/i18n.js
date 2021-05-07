@@ -5,6 +5,14 @@ const scope = 'footer';
 export default defineMessages({
   text: {
     id: `${scope}.text`,
-    defaultMessage: 'Prea. All rights reserved.'
+    defaultMessage: 'All rights reserved.'
+  },
+    privacyPolicy: {
+    id: `${scope}.privacyPolicy`,
+    defaultMessage: 'Privacy Policy'
+  },
+  imprint: {
+    id: `${scope}.imprint`,
+    defaultMessage: 'Impressum'
   }
 });
