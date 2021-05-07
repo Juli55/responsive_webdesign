@@ -23,6 +23,7 @@ export const StyledHeader = styled.div`
     height: 86px;
     justify-content: center;
     z-index: 2;
+    backdrop-filter: blur(16px);
 `;
 
 export const FlexContainer = styled(Container)`
