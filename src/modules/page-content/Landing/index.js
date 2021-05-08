@@ -8,6 +8,7 @@ import { Button } from '../../components/Button';
 import { useIntl, navigate } from 'gatsby-plugin-intl';
 import First from './Sections/First'
 import HowItWorks from './Sections/HowItWorks'
+import Advantages from './Sections/Advantages'
 import i18n from './i18n';
 
 const Landing = () => {
@@ -17,6 +18,7 @@ const Landing = () => {
     <>
         <First />
         <HowItWorks/>
+        <Advantages />
     </>
   );
 };

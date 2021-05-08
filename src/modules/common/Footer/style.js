@@ -21,6 +21,7 @@ export const StyledFooter = styled.div`
   bottom: 0;
   justify-content: center;
   width: 100%;
+  margin-top: 4rem;
 `;
 
 export const ContentContainer = styled.div`

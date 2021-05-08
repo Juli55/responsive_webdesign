@@ -7,8 +7,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: Nunito;
+    background-color: #e3f2fd;
   }
 `;
 
 export const ContentContainer = styled.div`
+  
 `;
