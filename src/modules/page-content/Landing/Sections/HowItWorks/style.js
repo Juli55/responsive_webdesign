@@ -20,7 +20,7 @@ export const FlexContainer = styled.div`
     display: flex;
     width: 100%;
     z-index: 1;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2rem;
     flex-wrap: wrap;
     gap: 2rem;
@@ -29,7 +29,7 @@ export const FlexContainer = styled.div`
 export const FlexItem = styled.div`
    flex: 1;
    display: flex;
-   justify-content: ${(props) => props.justifyContent ? props.justifyContent : 'flex-start'};
+   justify-content: center;
 `;
 
 export const Title = styled.h3`

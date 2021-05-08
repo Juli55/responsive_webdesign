@@ -19,11 +19,11 @@ export const BackgroundContainer = styled.div`
     top: 0;
     right: 0;
     z-index: 0;
-    width: 56%;
+    width: 70%;
     height: 100%;
     background-image: url(${image});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 `;
 
 export const FlexContainer = styled.div`
