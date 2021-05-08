@@ -62,8 +62,11 @@ export const StyledCard = styled(Card)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 812px;
   height: auto;
+  width: auto;
+  @media (min-width: 768px) {
+      width: 812px;
+  }
 `;
 
 export const CardTitle = styled.h4`

@@ -20,11 +20,15 @@ export const BackgroundContainer = styled.div`
     top: 0;
     right: 0;
     z-index: 0;
-    width: 70%;
+    
     height: 100%;
     background-image: url(${image});
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    @media (max-width: 768px) {
+      width: 100%;
+      background-size: 100% 100%;
+    }
 `;
 
 export const FlexContainer = styled.div`
@@ -45,7 +49,7 @@ export const FlexItem = styled.div`
 `;
 
 export const DemonstrationCardFront = styled(Card)`
-    width: 100%;
+    width: auto;
     z-index: 1;
     background-image: url(${infographic});
     background-size: 100% 100%;
