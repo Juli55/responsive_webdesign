@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import { Link } from 'gatsby-plugin-intl';
 import Container from '../../components/Container'
 import { StyledButton } from '../../components/Button/style';
+import { motion } from "framer-motion";
 
 export const MenuLink = styled(Link)`
-  color: black;
+  color: ${(props) => props.color ? props.color : 'black'};
   margin: 0 0.5rem;
   text-decoration: none;
   font-size: 1rem;
@@ -31,6 +32,9 @@ export const FlexContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: ${(props) => props.justifyContent};
+  flex-direction: ${(props) => props.flexDirection ? props.flexDirection : 'row'};
+  align-items: ${(props) => props.alignItems ? props.alignItems : 'center'};
 `;
 
 export const FlexItem = styled.div`
@@ -40,9 +44,32 @@ export const FlexItem = styled.div`
 `;
 
 export const RequestDemoButton = styled(StyledButton)`
-    background: linear-gradient(16deg, rgba(227,125,125,1) 0%, rgba(189,59,59,1) 100%);
+    background: linear-gradient(16deg, rgba(255,122,122,1) 0%, rgba(255,79,79,1) 100%);
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 12px;
     width: auto;
     color: white;
 `;
+
+export const HeaderMobileMenu = styled(motion.div)`
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  background-color: rgb(12, 21, 48);
+  padding: 2rem;
+  z-index: 1000;
+`;
+
+export const Overlay = styled(motion.div)`
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: #424242;
+  opacity: .8;
+  z-index: 999;
+`;
+

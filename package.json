@@ -3,10 +3,14 @@
   "private": true,
   "description": "A simple boilerplate for Gatsby",
   "version": "0.1.0",
-  "author": "Aldin Hadzifejzovic (aldin.hadzifejzovic@prea.eu)",
+  "author": "Julian Bertsch (julian.bertsch@code.berlin)",
   "dependencies": {
+    "@artsy/fresnel": "^1.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "extract-react-intl-messages": "^4.1.1",
-    "gatsby": "^2.32.0",
+    "framer-motion": "^4.1.13",
+    "gatsby": "^3.4.2",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -21,6 +25,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-intl": "^5.12.0",
+    "react-is": "^17.0.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -38,9 +43,5 @@
     " #### TOOLS #### ": "echo 1",
     "prettier-fix-code": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "generate-intl-json": "extract-messages -l=en -o src/lang -d en --flat false './src/**/!(*.test).js'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Aldinko/gatsby-website-boilerplate"
   }
 }
