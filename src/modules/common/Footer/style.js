@@ -19,7 +19,6 @@ export const StyledFooter = styled.div`
   text-align: center;
   color: #fff;
   bottom: 0;
-  margin-top: 2rem;
   justify-content: center;
   width: 100%;
 `;
