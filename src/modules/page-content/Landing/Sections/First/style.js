@@ -32,54 +32,80 @@ export const FlexContainer = styled.div`
     width: 100%;
     z-index: 1;
     justify-content: flex-start;
-    padding-left: 12rem;
+    // padding-left: 12rem;
 `;
 
 export const FlexItem = styled.div`
     flex: 1;
+    flex-grow: 1;
+    flex-basis: 612px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 `;
 
 export const DemonstrationCardFront = styled(Card)`
-    width: 512px;
-    position: absolute;
-    left: calc(50% - 150px);
+    width: 100%;
     z-index: 1;
     background-image: url(${infographic});
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 0 194px 0;
     opacity: .9;
+    @media (min-width: 768px) {
+      width: 512px;
+      position: absolute;
+      left: calc(50% - 150px);
+    }
 `;
 
 export const DemonstrationCardBack = styled(Card)`
-    width: 300px;
-    position: absolute;
-    z-index: 0;
-    top: calc(50% - 100px);
-    left: calc(50%);
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 300px;
+      position: absolute;
+      z-index: 0;
+      top: calc(50% - 100px);
+      left: calc(50%);
+    }
 `;
 
 export const ReadMoreButtonWrapper = styled.div`
     margin-top: 2rem;
+    display: flex;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
 `;
 
 export const PageTitle = styled.h2`
     margin: 0;
     font-size: 1.2rem;
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+      text-align: center;
+    }
 `;
 
 export const Title = styled.h1`
     margin: 0;
     font-size: 2rem;
-    max-width: 30%;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      max-width: 30%;
+    }
     margin-top: 2rem;
 `;
 
 export const SubTitle = styled.h3`
     font-size: 1.2rem;
-    max-width: 30%;
     font-weight: 400;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      max-width: 30%;
+    }
 `;

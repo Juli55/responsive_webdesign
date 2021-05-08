@@ -11,10 +11,10 @@ const First = () => {
             <SectionWrapper>
                 <BackgroundContainer />
                 <ContentContainer>
-                    <DemonstrationCardFront>
-                    </DemonstrationCardFront>
                     <FlexContainer>
                         <FlexItem>
+                            <DemonstrationCardFront>
+                            </DemonstrationCardFront>
                             <PageTitle>Welcome to Affililab</PageTitle>
                             <Title>Find your best fitting Affiliate Marketing Product</Title>
                             <SubTitle>Compare the Products you selected to advertise to get the ones with the best conditions</SubTitle>
