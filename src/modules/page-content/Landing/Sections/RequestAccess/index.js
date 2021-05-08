@@ -1,6 +1,6 @@
 import React from 'react';
 import { useIntl, navigate } from 'gatsby-plugin-intl';
-import { SectionWrapper, ContentContainer, BackgroundContainer, FlexContainer, FlexItem , DemonstrationCardFront, DemonstrationCardBack, ReadMoreButtonWrapper, PageTitle, Title, SubTitle, Number, Text, StyledCard, CardTitle} from './style'
+import { SectionWrapper, ContentContainer, BackgroundContainer, FlexContainer, FlexItem , DemonstrationCardFront, DemonstrationCardBack, ReadMoreButtonWrapper, PageTitle, Title, SubTitle, Number, Text, StyledCard, CardTitle, RequestDemoButton, RequestDemoInput} from './style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,31 +11,12 @@ const HowItWorks = () => {
         <>
             <SectionWrapper>
                 <ContentContainer>
-                    <Title>What are your advantages ?</Title>
-                    <SubTitle>When you use Affililab you find the best fitting affiliate products to promote</SubTitle>
-                    <StyledCard>
-                        <CardTitle>Your advantages to use Affililab</CardTitle>
-                        <FlexContainer>
-                            <FlexItem><FontAwesomeIcon icon={faCheck} color={'green'} /></FlexItem>
-                            <FlexItem>Find the best Product / Service</FlexItem>
-                        </FlexContainer>
-                        <FlexContainer>
-                            <FlexItem><FontAwesomeIcon icon={faCheck} color={'green'} /></FlexItem>
-                            <FlexItem>Find the best Product / Service</FlexItem>
-                        </FlexContainer>
-                        <FlexContainer>
-                            <FlexItem><FontAwesomeIcon icon={faCheck} color={'green'} /></FlexItem>
-                            <FlexItem>Find the best Product / Service</FlexItem>
-                        </FlexContainer>
-                        <FlexContainer>
-                            <FlexItem><FontAwesomeIcon icon={faCheck} color={'green'} /></FlexItem>
-                            <FlexItem>Find the best Product / Service</FlexItem>
-                        </FlexContainer>
-                        <FlexContainer>
-                            <FlexItem><FontAwesomeIcon icon={faCheck} color={'green'} /></FlexItem>
-                            <FlexItem>Find the best Product / Service</FlexItem>
-                        </FlexContainer>
-                    </StyledCard>
+                    <Title>Are you interested ?</Title>
+                    <SubTitle>Affililab is comming soon, register now for early access and bonus proviliges</SubTitle>
+                    <FlexContainer>
+                        <FlexItem><RequestDemoInput type="email" placeholder={'john@doe.com'}/></FlexItem>
+                        <FlexItem><RequestDemoButton>register</RequestDemoButton></FlexItem>
+                    </FlexContainer>
                 </ContentContainer>
             </SectionWrapper>
         </>

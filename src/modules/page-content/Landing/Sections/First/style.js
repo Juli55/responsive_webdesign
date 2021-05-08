@@ -9,6 +9,7 @@ export const SectionWrapper = styled.div`
     justify-content: center;
     position: relative;
     background-color: #e3f2fd;
+    min-height: 100vh;
 `;
 
 export const ContentContainer = styled(Container)`
