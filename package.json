@@ -8,6 +8,7 @@
     "@artsy/fresnel": "^1.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "extract-react-intl-messages": "^4.1.1",
     "framer-motion": "^4.1.13",
     "gatsby": "^3.4.2",

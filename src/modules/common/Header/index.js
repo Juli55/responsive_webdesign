@@ -10,6 +10,8 @@ import { Container } from '../Layout/style';
 import logo from '../../../images/logo.svg'
 import {Media, MediaContextProvider} from "../../../modules/helpers/Responsive";
 import CancelIcon from '../../../assets/icons/cancel.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -28,6 +30,8 @@ const Header = () => {
 
   return (
     <>
+      <MediaContextProvider>
+        <Media at="sm">
       <Overlay onClick={() => setMenuOpen(!isMenuOpen)} transition={{
         duration: 0.5
       }} variants={variantOverlay} initial={{ opacity: 0 }} animate={isMenuOpen ? 'open' : 'closed'} style={{position: 'fixed', opacity: '.8', backgroundColor: 'black', zIndex: '999', width: '100%', height: '100%', left: '0', right: '0', top: '0', bottom: '0'}}></Overlay>
@@ -43,11 +47,11 @@ const Header = () => {
           justifyContent={'flex-start'}
           alignItems={'center'}>
           <div
-            style={{ cursor: 'pointer', marginBottom: '4rem', alignSelf: 'flex-start' }}
+            style={{ cursor: 'pointer', marginBottom: '4rem', marginRight: '2rem', alignSelf: 'flex-end' }}
             onClick={() => {
               setMenuOpen(!isMenuOpen);
             }}>
-            X
+            <FontAwesomeIcon icon={faTimes} color={'white'} />
           </div>
           <MenuLink color={'white'} to="/">{intl.formatMessage(i18n.landing)}</MenuLink>
           <MenuLink color={'white'} to="/third-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
@@ -55,6 +59,8 @@ const Header = () => {
           <MenuLink color={'white'} to="/fifth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
         </FlexContainer>
       </HeaderMobileMenu>
+        </Media>
+      </MediaContextProvider>
     <StyledHeader>
       <FlexContainer>
         <FlexItem>
@@ -69,7 +75,7 @@ const Header = () => {
                   onClick={() => {
                     setMenuOpen(!isMenuOpen);
                   }}>
-                X
+                <FontAwesomeIcon icon={faBars} />
               </div>
             </>
           </Media>
