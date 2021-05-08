@@ -9,6 +9,7 @@ import { useIntl, navigate } from 'gatsby-plugin-intl';
 import First from './Sections/First'
 import HowItWorks from './Sections/HowItWorks'
 import Advantages from './Sections/Advantages'
+import RequestAccess from './Sections/RequestAccess'
 import i18n from './i18n';
 
 const Landing = () => {
