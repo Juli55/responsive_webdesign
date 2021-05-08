@@ -11,7 +11,7 @@ import HowItWorks from './Sections/HowItWorks'
 import Advantages from './Sections/Advantages'
 import RequestAccess from './Sections/RequestAccess'
 import i18n from './i18n';
-
+base
 const Landing = () => {
   const intl = useIntl();
 
