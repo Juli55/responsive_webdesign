@@ -10,6 +10,7 @@ export const SectionWrapper = styled.div`
     position: relative;
     background-color: #e3f2fd;
     min-height: 100vh;
+    margin-top: 4rem;
 `;
 
 export const ContentContainer = styled(Container)`
@@ -25,12 +26,20 @@ export const FlexContainer = styled.div`
     padding: 2rem;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 4rem;
+    flex-direction: ${(props) => props.reverse ? 'row-reverse' : 'row'};
+    @media (max-width: 1024px) {
+      gap: 4rem;
+    }
 `;
 
 export const FlexItem = styled.div`
    flex: 1;
+   flex-grow: 1;
+   flex-basis: 446px;
    display: flex;
    justify-content: center;
+   position: relative;
 `;
 
 export const Title = styled.h3`
@@ -39,6 +48,9 @@ export const Title = styled.h3`
     margin-top: 2rem;
     text-align: center;
     color: #424242;
+    @media (max-width: 768px) {
+      font-size: 2.5rem; 
+  }
 `;
 
 export const SubTitle = styled.h4`
@@ -52,6 +64,13 @@ export const Number = styled.h5`
   padding: 0;
   color: rgba(163, 247, 191, .6);
   font-size: 16rem;
+  @media (max-width: 1024px) {
+    position: absolute;
+    right: ${(props) => props.reverse ? '0' : 'auto'};
+    left: ${(props) => props.reverse ? 'auto' : '0'};
+    top: -7rem;
+    font-size: 12rem;
+  }
 `;
 
 export const Text = styled.p`

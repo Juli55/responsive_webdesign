@@ -21,14 +21,14 @@ const HowItWorks = () => {
                             </StyledCard>
                         </FlexItem>
                     </FlexContainer>
-                    <FlexContainer>
+                    <FlexContainer reverse>
+                        <FlexItem justifyContent={'flex-end'}><Number reverse>2</Number></FlexItem>
                         <FlexItem>
                             <StyledCard>
                                 <CardTitle>Title</CardTitle>
                                 <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
                             </StyledCard>
                         </FlexItem>
-                        <FlexItem justifyContent={'flex-end'}><Number>2</Number></FlexItem>
                     </FlexContainer>
                     <FlexContainer>
                         <FlexItem><Number>3</Number></FlexItem>
@@ -39,14 +39,14 @@ const HowItWorks = () => {
                             </StyledCard>
                         </FlexItem>
                     </FlexContainer>
-                    <FlexContainer>
+                    <FlexContainer reverse>
+                        <FlexItem justifyContent={'flex-end'}><Number reverse>4</Number></FlexItem>
                         <FlexItem>
                             <StyledCard>
                                 <CardTitle>Title</CardTitle>
                                 <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
                             </StyledCard>
                         </FlexItem>
-                        <FlexItem justifyContent={'flex-end'}><Number>4</Number></FlexItem>
                     </FlexContainer>
                 </ContentContainer>
             </SectionWrapper>

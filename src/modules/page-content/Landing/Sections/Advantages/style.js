@@ -37,6 +37,9 @@ export const Title = styled.h3`
     margin-top: 2rem;
     text-align: center;
     color: #424242;
+    @media (max-width: 768px) {
+      font-size: 2.5rem; 
+  }
 `;
 
 export const SubTitle = styled.h4`

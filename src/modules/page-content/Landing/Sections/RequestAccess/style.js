@@ -30,7 +30,8 @@ export const FlexContainer = styled.div`
 `;
 
 export const FlexItem = styled.div`
-  
+  flex-grow: 1;
+  text-align: center;
 `;
 
 export const Title = styled.h3`
@@ -39,6 +40,9 @@ export const Title = styled.h3`
     margin-top: 2rem;
     text-align: center;
     color: #424242;
+    @media (max-width: 768px) {
+      font-size: 2.5rem; 
+  }
 `;
 
 export const SubTitle = styled.h4`

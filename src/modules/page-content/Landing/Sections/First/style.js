@@ -10,6 +10,7 @@ export const SectionWrapper = styled.div`
     position: relative;
     background-color: #e3f2fd;
     min-height: 100vh;
+    margin-top: 4rem;
 `;
 
 export const ContentContainer = styled(Container)`
@@ -20,8 +21,8 @@ export const BackgroundContainer = styled.div`
     top: 0;
     right: 0;
     z-index: 0;
-    
     height: 100%;
+    width: 70%;
     background-image: url(${image});
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -36,7 +37,15 @@ export const FlexContainer = styled.div`
     width: 100%;
     z-index: 1;
     justify-content: flex-start;
-    // padding-left: 12rem;
+    @media (max-width: 768px) {
+      padding-left: 0rem;
+    }
+    @media (min-width: 1024px) {
+      padding-left: 4rem;
+    }
+    @media (min-width: 1192px) {
+      padding-left: 8rem;
+    }
 `;
 
 export const FlexItem = styled.div`
