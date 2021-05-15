@@ -64,7 +64,7 @@ const Header = () => {
     <StyledHeader>
       <FlexContainer>
         <FlexItem>
-          <MenuLink to="/"><img src={logo} width={182} alt=""/></MenuLink>
+          <MenuLink to="/"><img src={logo} width={146} style={{marginLeft: '-36px'}} alt=""/></MenuLink>
         </FlexItem>
         <FlexItem>
           <MediaContextProvider>

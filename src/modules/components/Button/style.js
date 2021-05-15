@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  // background: radial-gradient(circle, rgba(96,172,91,1) 0%, rgba(128,208,139,1) 0%, rgba(163,247,236,1) 100%);
-  // background: red;
-  background: linear-gradient(16deg, rgba(163,247,191,1) 0%, rgba(163,234,247,1) 100%);
+  background-color: #a3f7bf;
+  background-image: linear-gradient(90deg, #a3f7bf 0%, #a3eaf7 100%);
   border: 1px solid linear-gradient(16deg, rgba(163,247,191,1) 0%, rgba(163,234,247,1) 100%);
   border: none;
   cursor: pointer;

@@ -21,7 +21,7 @@ export const ContentContainer = styled(Container)`
 
 export const FlexContainer = styled.div`
     display: flex;
-    width: 100%;
+    width: auto;
     z-index: 1;
     justify-content: center;
     flex-wrap: wrap;
@@ -30,8 +30,8 @@ export const FlexContainer = styled.div`
 `;
 
 export const FlexItem = styled.div`
+  display: flex;
   flex-grow: 1;
-  text-align: center;
 `;
 
 export const Title = styled.h3`
@@ -90,8 +90,11 @@ export const RequestDemoButton = styled(StyledButton)`
 
 export const RequestDemoInput = styled.input`
     padding: 0 2rem;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     border-radius: 0px;
-    width: 312px;
+    width: 256px;
     box-shadow: none;
     border: none;
     height: 56px;

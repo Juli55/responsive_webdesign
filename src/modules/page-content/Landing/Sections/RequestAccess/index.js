@@ -14,8 +14,8 @@ const HowItWorks = () => {
                     <Title>Are you interested ?</Title>
                     <SubTitle>Affililab is comming soon, register now for early access and bonus proviliges</SubTitle>
                     <FlexContainer>
-                        <FlexItem><RequestDemoInput type="email" placeholder={'john@doe.com'}/></FlexItem>
-                        <FlexItem><RequestDemoButton>register</RequestDemoButton></FlexItem>
+                        <FlexItem style={{justifyContent: 'center'}}><RequestDemoInput type="email" placeholder={'john@doe.com'}/></FlexItem>
+                        <FlexItem style={{justifyContent: 'center'}}><RequestDemoButton>register</RequestDemoButton></FlexItem>
                     </FlexContainer>
                 </ContentContainer>
             </SectionWrapper>

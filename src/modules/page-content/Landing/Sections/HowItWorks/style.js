@@ -23,7 +23,7 @@ export const FlexContainer = styled.div`
     width: 100%;
     z-index: 1;
     justify-content: center;
-    padding: 2rem;
+    padding: 0rem;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 4rem;
