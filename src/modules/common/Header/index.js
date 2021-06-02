@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 import i18n from './i18n';
-import { MenuLink, StyledHeader, FlexContainer, FlexItem, RequestDemoButton,
+import { MenuLink, StyledHeader, FlexContainerMain, FlexContainer, FlexItem, RequestDemoButton,
   HeaderMobileMenu,
   Overlay } from './style';
 import { Container } from '../Layout/style';
@@ -42,7 +42,7 @@ const Header = () => {
           duration: 0.5
         }}
         variants={variants}>
-        <FlexContainer
+        <FlexContainerMain
           flexDirection={'column'}
           justifyContent={'flex-start'}
           alignItems={'center'}>
@@ -57,14 +57,14 @@ const Header = () => {
           <MenuLink color={'white'} to="/third-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
           <MenuLink color={'white'} to="/fourth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
           <MenuLink color={'white'} to="/fifth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
-        </FlexContainer>
+        </FlexContainerMain>
       </HeaderMobileMenu>
         </Media>
       </MediaContextProvider>
     <StyledHeader>
-      <FlexContainer>
+      <FlexContainerMain>
         <FlexItem>
-          <MenuLink to="/"><img src={logo} width={146} style={{marginLeft: '-36px'}} alt=""/></MenuLink>
+          <MenuLink to="/"><img src={logo} width={72} alt=""/></MenuLink>
         </FlexItem>
         <FlexItem>
           <MediaContextProvider>
@@ -80,15 +80,17 @@ const Header = () => {
             </>
           </Media>
           <Media greaterThan="sm">
-            <MenuLink to="/">{intl.formatMessage(i18n.landing)}</MenuLink>
-            <MenuLink to="/second-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
-            <MenuLink to="/third-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
-            <MenuLink to="/fourth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
-            <RequestDemoButton>request early access</RequestDemoButton>
+            <FlexContainer gap={'12px'}>
+              <MenuLink to="/">{intl.formatMessage(i18n.landing)}</MenuLink>
+              <MenuLink to="/second-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
+              <MenuLink to="/third-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
+              <MenuLink to="/fourth-section">{intl.formatMessage(i18n.imprint)}</MenuLink>
+              <RequestDemoButton>request early access</RequestDemoButton>
+            </FlexContainer>
           </Media>
           </MediaContextProvider>
         </FlexItem>
-      </FlexContainer>
+      </FlexContainerMain>
     </StyledHeader>
       </>
   );

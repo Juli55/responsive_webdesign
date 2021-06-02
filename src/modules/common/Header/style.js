@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 
 export const MenuLink = styled(Link)`
   color: ${(props) => props.color ? props.color : 'black'};
-  margin: 0 0.5rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .8rem;
+  font-weight: 600;
 `;
 
 export const StyledHeader = styled.div`
@@ -27,14 +27,26 @@ export const StyledHeader = styled.div`
     backdrop-filter: blur(16px);
 `;
 
-export const FlexContainer = styled(Container)`
-  width: 100%;
+export const FlexContainerMain = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: ${(props) => props.justifyContent};
   flex-direction: ${(props) => props.flexDirection ? props.flexDirection : 'row'};
   align-items: ${(props) => props.alignItems ? props.alignItems : 'center'};
+  padding: ${(props) => props.padding ? props.padding : ''};
+  gap: ${(props) => props.gap ? props.gap : ''};
+`;
+
+export const FlexContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: ${(props) => props.justifyContent};
+  flex-direction: ${(props) => props.flexDirection ? props.flexDirection : 'row'};
+  align-items: ${(props) => props.alignItems ? props.alignItems : 'center'};
+  padding: ${(props) => props.padding ? props.padding : ''};
+  gap: ${(props) => props.gap ? props.gap : ''};
 `;
 
 export const FlexItem = styled.div`
@@ -45,10 +57,12 @@ export const FlexItem = styled.div`
 
 export const RequestDemoButton = styled(StyledButton)`
     background: linear-gradient(16deg, rgba(255,122,122,1) 0%, rgba(255,79,79,1) 100%);
-    padding: 1rem 1rem 1rem 1rem;
-    border-radius: 12px;
+    padding: .8rem 1rem .8rem 1rem;
+    border-radius: 142px;
     width: auto;
     color: white;
+    font-size: .8rem;
+    font-weight: 600;
 `;
 
 export const HeaderMobileMenu = styled(motion.div)`

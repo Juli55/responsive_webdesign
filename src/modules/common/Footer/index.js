@@ -19,7 +19,7 @@ const Footer = () => {
           <FlexItemFooter flex={2}>
             <FlexContainer flexDirection={'column'} justifyContent={'flex-start'}>
               <FlexItem align={'flex-start'}>
-                <img src={Logo} width={182} alt=""/>
+                <img src={Logo} width={72} alt=""/>
                 <p>&copy;{currentYear} Affililab {intl.formatMessage(i18n.text)}</p>
               </FlexItem>
             </FlexContainer>
